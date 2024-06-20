@@ -29,7 +29,7 @@ nav{
 }
 .social a,
 .location a{
-    margin: 0px 5px;
+    margin: 0 5px;
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.9rem;
 }
@@ -117,4 +117,49 @@ footer{
     outline: none;
     border: 1px solid #2352202c;
     box-sizing: border-box;
+}
+@media screen and (max-width:768px) {
+    nav{
+        width: 100%;
+        z-index: 100%
+    }
+    .phone{
+        margin-bottom: 2vw;
+        font-size: 1.5rem;
+    }
+    .phone span{
+        letter-spacing: 0.2vw;
+        font-size: 4.2vw;
+    }
+    .menu{
+        padding: 0.2vw;
+    }
+    .skill li{
+        margin: 1vw;
+        font-size: 3.2vw;
+    }
+    footer{
+        padding: 1vw;
+        margin-top: 2vw;
+    }
+    .copyright{
+        letter-spacing: 0.1vw;
+    }
+    .location{
+        letter-spacing: 0.6vw;
+    }
+    .contact input{
+        width: 80%;
+        height: 4vw;
+        padding: 0 2vw;
+    }
+    .contact input[type="submit"]{
+        width: 40%;
+        margin: 0 2vw;
+    }
+    .contact textarea{
+        width: 100%;
+        padding: 2.5vw;
+        margin-bottom: 1.7vw;
+    }
 }
