@@ -118,6 +118,11 @@ footer{
     border: 1px solid #2352202c;
     box-sizing: border-box;
 }
+.pdfphone p{
+    display:flex;
+    background-color:green;
+    color: gold;
+}
 @media screen and (max-width:768px) {
     nav{
         width: 100%;
@@ -137,6 +142,9 @@ footer{
     .skill li{
         margin: 1vw;
         font-size: 3.2vw;
+    }
+    .pdfphone p{
+        font-size: 2vw;
     }
     footer{
         padding: 1vw;
