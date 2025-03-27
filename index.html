@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="Utf-8">
-        <meta name="viewport" content="width=device-Width, initial-scale=1.0">
-        <title>Xvien Agyei's Resume</title>
-        <link rel="icon" href="images/fav icon.jpg">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="annoymous"></script>
-        <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
-    </head>
+
+<head>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-Width, initial-scale=1.0">
+    <title>Xvien Agyei's Resume</title>
+    <link rel="icon" href="./images/logo1.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+</head>
+
 <body>
     <div class="phead">
         <nav>
             <div class="social-call">
                 <div class="social">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="linkedin.com/in/mr-xvien-503409189"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="https://github.com/Mr-doteX?tab=repositories"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/@BedRoom_Production"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                 </div>
-                <div class="phone"><span>Welcome <a href="#"><i class="fab fa-smile-o"></i></a></span></div>
+                <div class="phone"><span>Welcome🫡</span></div>
                 <div class="menu">
                     <ul class="skills">
-                        <li><a href="index.html">.it</a></li>
-                        <li><a href="hr.html">.hr</a></li>
-                        <li><a href="music.html">.music</a></li>
+                        <li><a href="https://cephtech.org/">_it</a></li>
+                        <li><a href="linkedin.com/in/mr-xvien-503409189">_hr</a></li>
+                        <li><a href="https://www.youtube.com/@BedRoom_Production">_music</a></li>
                     </ul>
                 </div>
             </div>
@@ -31,24 +33,22 @@
     </div>
     <div class="cvpdf">
         <div style="background-color: none; width: 100%; height: 700px;">
-            <embed style="width: 98%; height: 100%" src="Xvien_Agyei_IT_Resume_Ghana.pdf" type="application/pdf"></embed>
-            <br>
-            <div class="pdfphone">
-            <a href="Xvien_Agyei_IT_Resume_Ghana.pdf" target="_blank"><p>Click here to open</p></a>
-            </div>
+            <embed style="width: 98%; height: 100%" src="Xvien_Agyei_IT_Resume_Ghana.pdf"
+                type="application/pdf"></embed>
+            
         </div>
     </div>
     <footer>
-        <span class="copyright">&copy;Xateck.<font>2024</font></span><i class="fa-regular fa-face-smile-wink"></i>
-        <!---<div class="location">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+        <div class="crt">
+            <span class="copyright">&copy;doteX.<font>2024</font></span>
+            <p>with💖</p>
+        </div>
+        -<div class="location">
             <p>Current Location;<br>Amasamam - Accra<br> Ghana - West Africa</p>
-        </div>-->
+        </div>
         <div class="contact">
             <form action="mailto:agyei22@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="New Job Alert">
+                <input type="hidden" name="_ subject" value="New Job Alert">
                 <input type="text" name="name" placeholder="Enter your Name" required>
                 <input type="email" placeholder="yourmail@mail.com" required>
                 <textarea rows="#" name="message" placeholder="Please type your Request" required></textarea>
@@ -61,11 +61,11 @@
     <script>
         var pdfUrl = 'Xvien_Agyei_IT_Resume_Ghana.pdf';
         var pdfViewer = document.getElementById('cvpdf');
-        
-        pdfjslib.getDocument(pdfUrl).promise.then(function(pdf)){
-            pdf.getPage(1).then(function(page){
+
+        pdfjslib.getDocument(pdfUrl).promise.then(function (pdf){
+            pdf.getPage(1).then(function (page) {
                 var scale = 1.5;
-                var viewport = page.getViewport({scale: scale});
+                var viewport = page.getViewport({ scale: scale });
 
                 var canvas = document.createElement('canvas');
                 var context = canvas.getContext('2d');
@@ -84,4 +84,5 @@
 
 
 </body>
+
 </html>
